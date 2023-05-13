@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE biblioteca SYSTEM "02_DTD_Actividad2.dtd">
 <biblioteca>
+
     <libros>
         <!-- Para los libros este atributo empieza con la letra “L” 
         seguido de 4 dígitos identificativos-->
