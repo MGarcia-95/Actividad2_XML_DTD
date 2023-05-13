@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE biblioteca SYSTEM "02_DTD_Actividad2.dtd">
+<!DOCTYPE biblioteca SYSTEM "02_DTD_Actividad2.dtd" [
+    <!ENTITY AEP "entity-value">
+    <!ENTITY OT "entity-value">
+    <!ENTITY MB "entity-value">
+]>
+
 <biblioteca>
     <libros>
         <!-- Para los libros este atributo empieza con la letra “L” 
@@ -7,7 +12,7 @@
         <!-- Los libros a su vez son clasificados en novela, infantil o didáctico -->
 
         <libro id="L-1234" tipo_clase="Didactico" paginas="23">
-            <titulo>Aprende a educar a un pez</titulo>
+            <titulo>&AEP;</titulo>
             <capitulos>
                 <capitulo titulo="Clases de peces" paginas="15">
                     <contenido>Hay muchos tipos de peces, si quieres saberlos todos compra una enciclopedia</contenido>
@@ -27,8 +32,8 @@
             <sinopsis></sinopsis>
         </libro>
 
-        <libro id="L-5678" tipo_clase="Novela" paginas="">
-            <titulo>El origen de Thanos</titulo>
+        <libro id="L-5678" tipo_clase="Novela" paginas="90">
+            <titulo>&OT;</titulo>
             <capitulos>
                 <capitulo titulo="Origen de Thanos" paginas="16">
                     <contenido>Thanos nacio siendo un niño gigante hipermusculado que pensaba que
@@ -86,7 +91,7 @@
                 <seccion_p tipo_seccion_p="Opinion">
                     <!-- económica, opinión, deportes, nacional o internacional-->
                     <articulos>
-                        <articulo autor="Majin Boo">
+                        <articulo autor="&MB;">
                             <contenido_p>
                             <!-- necesita un atributo que referencie a la información-->
                             majin boo es entrevistado y desvela porque es tan malvado
