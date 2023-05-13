@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca SYSTEM "02_DTD_Actividad2.dtd">
+<biblioteca>
+    <libros>
+        <!-- Para los libros este atributo empieza con la letra “L” 
+        seguido de 4 dígitos identificativos-->
+        <!-- Los libros a su vez son clasificados en novela, infantil o didáctico -->
+
+        <libro id="L-1234" tipo_clase="Didactico" paginas="23">
+            <titulo>Aprende a educar a un pez</titulo>
+            <capitulos>
+                <capitulo titulo="Clases de peces" paginas="15">
+                    <contenido>Hay muchos tipos de peces, si quieres saberlos todos compra una enciclopedia</contenido>
+                </capitulo>
+
+                <capitulo titulo="Como darles de comer" paginas="6">
+                    <contenido>Si les das poco se moriran, si les das mucho, explotaran y moriran, dales lo justo.</contenido>
+                </capitulo>
+
+                <capitulo titulo="Enseña a tu pez a hacerse el muerto" paginas="8">
+                    <contenido>Es una tarea compleja, pero el que la sigue la consigue, lorem ipsum.</contenido>
+                </capitulo>
+
+            </capitulos>
+            <!-- contenido, en el que se tiene un atributo con el enlace a la información.-->
+            <indice></indice>
+            <sinopsis></sinopsis>
+        </libro>
+
+        <libro id="L-5678" tipo_clase="Novela" paginas="">
+            <titulo>El origen de Thanos</titulo>
+            <capitulos>
+                <capitulo titulo="Origen de Thanos" paginas="16">
+                    <contenido>Thanos nacio siendo un niño gigante hipermusculado que pensaba que
+                    sobraba gente en el universo</contenido>
+                </capitulo>
+
+                <capitulo titulo="Crecimiento de Thanos" paginas="34">
+                    <contenido>Crecio en una familia donde no le querian y tambien queria acabar con la mitad de su familia
+                    que les caia mal</contenido>
+                </capitulo>
+
+                <capitulo titulo="El motivo del odio de Thanos" paginas="45">
+                    <contenido>Aqui empiezan a contarse los problemas mentales dee thanos para querer acabar 
+                    con la mitad del universo</contenido>
+                </capitulo>
+
+                <capitulo titulo="Thanos esta aburrido" paginas="28">
+                    <contenido>Tras aniquilar a la mitad de toda civilizacion, Thanos se va a una casita humilde a vivir placidamente
+                    y comer frutitas sin pensar en lo que se le viene encima</contenido>
+                </capitulo>
+
+            </capitulos>
+            <indice></indice>
+            <sinopsis></sinopsis>
+        </libro>
+
+    </libros>
+
+    <revistas>
+        <!-- En el caso de las revistas empieza por la letra “R”.-->
+        <revista id="R0001" tipo_clase="Investigacion" paginas="5">
+            <!-- informática, corazón, coches, investigación y otras-->
+            <titulo_r>Comer es vivir</titulo_r>
+            <numero_revista>48</numero_revista>
+            <indice>En este ejemplar explicaremos por qué tienes tanta hambre todos los dias</indice>
+            <secciones>
+                <seccion_r paginas="3">
+                    <contenido>¿El hambre es mental o no? No, tienes hambre porque eres un ser vivo</contenido> 
+                </seccion_r>
+                <seccion_r paginas="2">
+                    <contenido>La razón por la que comer es vivir es porque te nutres mientras disfrutas/vives. </contenido>
+                </seccion_r>
+            </secciones>
+        </revista>
+    </revistas>
+    
+    <periodicos>
+        <!-- Para los periódicos este atributo empieza por la letra “P” 
+        seguido de los 4 dígitos identificativos-->
+       <!-- Los periódicos se clasifican en nacionales e internacionales-->
+
+        <periodico id="P-2222" tipo_clase_p="Nacional">           
+            <fecha_publicacion>12/05/2023</fecha_publicacion>
+            <secciones_p>
+                <seccion_p tipo_seccion_p="Opinion">
+                    <!-- económica, opinión, deportes, nacional o internacional-->
+                    <articulos>
+                        <articulo autor="Majin Boo">
+                            <contenido_p>
+                            <!-- necesita un atributo que referencie a la información-->
+                            majin boo es entrevistado y desvela porque es tan malvado
+                            </contenido_p>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+
+                <seccion_p tipo_seccion_p="Internacional">
+                    <!-- económica, opinión, deportes, nacional o internacional-->
+                    <articulos>
+                        <articulo autor="Jiren">
+                            <contenido_p>
+                            <!-- necesita un atributo que referencie a la información-->
+                            Jiren cuenta como se convirtió en el guerrero mas fuerte de su universo
+                            </contenido_p>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+            </secciones_p>
+            <indice_p></indice_p>
+        </periodico>
+    </periodicos>
+
+</biblioteca> 
