@@ -39,11 +39,11 @@
 
 <!ELEMENT titulo_r (#PCDATA)>
 <!ELEMENT numero_revista (#PCDATA)>
-<!-- <!ELEMENT indice (#PCDATA)>-->
+<!ELEMENT indice (#PCDATA)>
 <!ELEMENT secciones (seccion_r+)>
 <!ELEMENT seccion_r (contenido)>
 <!ATTLIST seccion_r paginas CDATA >
-<!-- <!ELEMENT contenido (#PCDATA)> -->
+<!ELEMENT contenido (#PCDATA)> 
 
 <!--Defino las entidades de revistas-->
 
@@ -57,14 +57,12 @@
 
 <!ATTLIST periodico id ID #REQUIRED>
 <!ATTLIST periodico tipo_clase_p (Nacional | Internacional) #REQUIRED>
-<!ATTLIST fecha_publicacion CDATA #REQUIRED>
+<!ATTLIST periodico fecha_publicacion CDATA #REQUIRED>
 
 <!ELEMENT secciones_p (seccion_p+)> 
 
-<!ATTLIST seccion_p tipo_seccion_p (Economica | Opinion | Deportes | Nacional | Internacional) #REQUIRED>
-
 <!ELEMENT seccion_p (articulos)>
-
+<!ATTLIST seccion_p tipo_seccion_p (Economica | Opinion | Deportes | Nacional | Internacional) #REQUIRED>
 <!ELEMENT articulos (articulo+)>
 <!ELEMENT articulo (contenido_p)>
 <!ATTLIST articulo autor CDATA #REQUIRED>

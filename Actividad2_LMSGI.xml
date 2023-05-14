@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE biblioteca SYSTEM "02_DTD_Actividad2.dtd">
+<!DOCTYPE biblioteca SYSTEM "02_DTD_Actividad2.dtd"[ 
+    <!ENTITY AEP "entity-value">
+    <!ENTITY OT "entity-value">
+    <!ENTITY MB "entity-value">
+]>
  
 <biblioteca>
 
@@ -81,7 +85,7 @@
         seguido de los 4 dígitos identificativos-->
        <!-- Los periódicos se clasifican en nacionales e internacionales-->
 
-        <periodico id="P-2222" tipo_clase_p="Nacional" fecha_publicacion="12/05/2023">           
+        <periodico id="P-2222" tipo_clase_p="Nacional" fecha_publicacion="12/05/2023">                      
            
             <secciones_p>
                 <seccion_p tipo_seccion_p="Opinion">
