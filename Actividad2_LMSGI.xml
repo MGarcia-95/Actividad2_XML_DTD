@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE biblioteca SYSTEM "02_DTD_Actividad2.dtd">
+ 
 <biblioteca>
 
     <libros>
@@ -21,7 +22,6 @@
                 <capitulo titulo="Enseña a tu pez a hacerse el muerto" paginas="8">
                     <contenido>Es una tarea compleja, pero el que la sigue la consigue, lorem ipsum.</contenido>
                 </capitulo>
-
             </capitulos>
             <!-- contenido, en el que se tiene un atributo con el enlace a la información.-->
             <indice></indice>
@@ -81,8 +81,8 @@
         seguido de los 4 dígitos identificativos-->
        <!-- Los periódicos se clasifican en nacionales e internacionales-->
 
-        <periodico id="P-2222" tipo_clase_p="Nacional">           
-            <fecha_publicacion>12/05/2023</fecha_publicacion>
+        <periodico id="P-2222" tipo_clase_p="Nacional" fecha_publicacion="12/05/2023">           
+           
             <secciones_p>
                 <seccion_p tipo_seccion_p="Opinion">
                     <!-- económica, opinión, deportes, nacional o internacional-->

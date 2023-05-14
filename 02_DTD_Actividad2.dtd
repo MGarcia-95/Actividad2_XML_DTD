@@ -31,17 +31,18 @@
 
 <!ELEMENT revista (titulo_r, numero_revista, indice, secciones+)>
 
-<!-- Defino los atributos de revista--> 
+<!-- Defino los atributos de revista-->
+
 <!ATTLIST revista id ID #REQUIRED>
-<!ATTLIST revista tipo_clase (Informatica | Corazon | Coches | Investigacion | Otras) #REQUIRED>
-<!ATTLIST revista paginas CDATA #REQUIRED>
+<!ATTLIST revista tipo_clase_r (Informatica | Corazon | Coches | Investigacion | Otras) #REQUIRED>
+<!ATTLIST revista paginas CDATA >
 
 <!ELEMENT titulo_r (#PCDATA)>
 <!ELEMENT numero_revista (#PCDATA)>
 <!-- <!ELEMENT indice (#PCDATA)>-->
 <!ELEMENT secciones (seccion_r+)>
 <!ELEMENT seccion_r (contenido)>
-<!ATTLIST seccion_r paginas CDATA #REQUIRED>
+<!ATTLIST seccion_r paginas CDATA >
 <!-- <!ELEMENT contenido (#PCDATA)> -->
 
 <!--Defino las entidades de revistas-->
@@ -52,14 +53,13 @@
 <!-- Periodicos -->
 
 
-<!ELEMENT periodico (fecha_publicacion, secciones_p, indice_p)>
+<!ELEMENT periodico (secciones_p, indice_p)>
 
 <!ATTLIST periodico id ID #REQUIRED>
 <!ATTLIST periodico tipo_clase_p (Nacional | Internacional) #REQUIRED>
+<!ATTLIST fecha_publicacion CDATA #REQUIRED>
 
-<!ELEMENT fecha_publicacion (#PCDATA)>
 <!ELEMENT secciones_p (seccion_p+)> 
-
 
 <!ATTLIST seccion_p tipo_seccion_p (Economica | Opinion | Deportes | Nacional | Internacional) #REQUIRED>
 
@@ -71,3 +71,8 @@
 
 <!ELEMENT contenido_p (#PCDATA)>
 <!ELEMENT indice_p (#PCDATA)>
+
+<!-- Defino entidades -->
+<!ENTITY AEP "Aprende a educar a un Pez">
+<!ENTITY OT " El origen de Thanos">
+<!ENTITY MB "Majin Boo">
