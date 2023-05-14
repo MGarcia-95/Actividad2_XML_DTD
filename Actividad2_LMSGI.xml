@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE biblioteca SYSTEM "02_DTD_Actividad2.dtd"[ 
+<!DOCTYPE biblioteca SYSTEM "02_DTD_Actividad2.dtd" [
     <!ENTITY AEP "entity-value">
     <!ENTITY OT "entity-value">
-    <!ENTITY MB "entity-value">
 ]>
- 
 <biblioteca>
-
-    <libros>
-        <!-- Para los libros este atributo empieza con la letra “L” 
+   <!-- Para los libros este atributo empieza con la letra “L” 
         seguido de 4 dígitos identificativos-->
         <!-- Los libros a su vez son clasificados en novela, infantil o didáctico -->
+    <libros>
 
         <libro id="L-1234" tipo_clase="Didactico" paginas="23">
-            <titulo>Aprende a educar a un pez</titulo>
+            <titulo>&AEP;</titulo>
             <capitulos>
                 <capitulo titulo="Clases de peces" paginas="15">
                     <contenido>Hay muchos tipos de peces, si quieres saberlos todos compra una enciclopedia</contenido>
@@ -27,13 +24,12 @@
                     <contenido>Es una tarea compleja, pero el que la sigue la consigue, lorem ipsum.</contenido>
                 </capitulo>
             </capitulos>
-            <!-- contenido, en el que se tiene un atributo con el enlace a la información.-->
-            <indice></indice>
-            <sinopsis></sinopsis>
+            <indice>Aqui va el indice</indice>
+            <sinopsis>Aqui va la sinopsis</sinopsis>
         </libro>
 
-        <libro id="L-5678" tipo_clase="Novela" paginas="">
-            <titulo>El origen de Thanos</titulo>
+        <libro id="L-5678" tipo_clase="Novela" paginas="46">
+            <titulo>&OT;</titulo>
             <capitulos>
                 <capitulo titulo="Origen de Thanos" paginas="16">
                     <contenido>Thanos nacio siendo un niño gigante hipermusculado que pensaba que
@@ -56,16 +52,15 @@
                 </capitulo>
 
             </capitulos>
-            <indice></indice>
-            <sinopsis></sinopsis>
+            <indice>Aqui va el indice</indice>
+            <sinopsis>Aqui escribimos la sinopsis</sinopsis>
         </libro>
 
     </libros>
 
     <revistas>
-        <!-- En el caso de las revistas empieza por la letra “R”.-->
+
         <revista id="R0001" tipo_clase="Investigacion" paginas="5">
-            <!-- informática, corazón, coches, investigación y otras-->
             <titulo_r>Comer es vivir</titulo_r>
             <numero_revista>48</numero_revista>
             <indice>En este ejemplar explicaremos por qué tienes tanta hambre todos los dias</indice>
@@ -78,42 +73,41 @@
                 </seccion_r>
             </secciones>
         </revista>
+
     </revistas>
-    
-    <periodicos>
-        <!-- Para los periódicos este atributo empieza por la letra “P” 
+
+    <!-- Para los periódicos este atributo empieza por la letra “P” 
         seguido de los 4 dígitos identificativos-->
        <!-- Los periódicos se clasifican en nacionales e internacionales-->
 
-        <periodico id="P-2222" tipo_clase_p="Nacional" fecha_publicacion="12/05/2023">                      
-           
+    <periodicos>
+
+        <periodico id="P-2222" tipo_clase_p="Nacional" fecha_publicacion="12/05/2023">                 
             <secciones_p>
                 <seccion_p tipo_seccion_p="Opinion">
-                    <!-- económica, opinión, deportes, nacional o internacional-->
+                    
                     <articulos>
                         <articulo autor="Majin Boo">
-                            <contenido_p>
-                            <!-- necesita un atributo que referencie a la información-->
-                            majin boo es entrevistado y desvela porque es tan malvado
-                            </contenido_p>
+                            <contenido_p>Majin boo es entrevistado y desvela porque es tan malvado</contenido_p>
                         </articulo>
                     </articulos>
                 </seccion_p>
 
                 <seccion_p tipo_seccion_p="Internacional">
-                    <!-- económica, opinión, deportes, nacional o internacional-->
+                    
                     <articulos>
                         <articulo autor="Jiren">
                             <contenido_p>
-                            <!-- necesita un atributo que referencie a la información-->
+                            
                             Jiren cuenta como se convirtió en el guerrero mas fuerte de su universo
                             </contenido_p>
                         </articulo>
                     </articulos>
                 </seccion_p>
             </secciones_p>
-            <indice_p></indice_p>
+            <indice_p>Aqui va un indice</indice_p>
         </periodico>
+        
     </periodicos>
 
 </biblioteca> 
