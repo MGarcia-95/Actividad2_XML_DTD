@@ -2,7 +2,17 @@
 <!DOCTYPE biblioteca SYSTEM "02_DTD_Actividad2.dtd" [
     <!ENTITY AEP "entity-value">
     <!ENTITY OT "entity-value">
+<<<<<<< HEAD
 ]>
+=======
+    <!ENTITY MB "entity-value">
+]>
+
+<!-- En este caso añadimos tambien la posibilidad de probar el mismo documento con el xsd correspondiente -->
+<!-- biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema" 
+        xsi: noNamespaceSchemaLocation= "03_XSD_Actividad2.xsd" -->
+
+>>>>>>> dacef49b65244b9b86d65066bc271522630c8c94
 <biblioteca>
    <!-- Para los libros este atributo empieza con la letra “L” 
         seguido de 4 dígitos identificativos-->
@@ -28,7 +38,11 @@
             <sinopsis>Aqui va la sinopsis</sinopsis>
         </libro>
 
+<<<<<<< HEAD
         <libro id="L-5678" tipo_clase="Novela" paginas="46">
+=======
+        <libro id="L-5678" tipo_clase="Novela" paginas="90">
+>>>>>>> dacef49b65244b9b86d65066bc271522630c8c94
             <titulo>&OT;</titulo>
             <capitulos>
                 <capitulo titulo="Origen de Thanos" paginas="16">
@@ -59,8 +73,14 @@
     </libros>
 
     <revistas>
+<<<<<<< HEAD
 
         <revista id="R0001" tipo_clase="Investigacion" paginas="5">
+=======
+        <!-- En el caso de las revistas empieza por la letra “R”.-->
+        <revista id="R0001" tipo_clase_r="Investigacion" paginas="5">
+            <!-- informática, corazón, coches, investigación y otras-->
+>>>>>>> dacef49b65244b9b86d65066bc271522630c8c94
             <titulo_r>Comer es vivir</titulo_r>
             <numero_revista>48</numero_revista>
             <indice>En este ejemplar explicaremos por qué tienes tanta hambre todos los dias</indice>
@@ -80,15 +100,27 @@
         seguido de los 4 dígitos identificativos-->
        <!-- Los periódicos se clasifican en nacionales e internacionales-->
 
+<<<<<<< HEAD
     <periodicos>
 
         <periodico id="P-2222" tipo_clase_p="Nacional" fecha_publicacion="12/05/2023">                 
+=======
+        <periodico id="P-2222" tipo_clase_p="Nacional" fecha_publicacion="12/05/2023">           
+>>>>>>> dacef49b65244b9b86d65066bc271522630c8c94
             <secciones_p>
                 <seccion_p tipo_seccion_p="Opinion">
                     
                     <articulos>
+<<<<<<< HEAD
                         <articulo autor="Majin Boo">
                             <contenido_p>Majin boo es entrevistado y desvela porque es tan malvado</contenido_p>
+=======
+                        <articulo autor="&MB;">
+                            <contenido_p>
+                            <!-- necesita un atributo que referencie a la información-->
+                            majin boo es entrevistado y desvela porque es tan malvado
+                            </contenido_p>
+>>>>>>> dacef49b65244b9b86d65066bc271522630c8c94
                         </articulo>
                     </articulos>
                 </seccion_p>
