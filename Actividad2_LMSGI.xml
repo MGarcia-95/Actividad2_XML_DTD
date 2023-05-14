@@ -5,6 +5,10 @@
     <!ENTITY MB "entity-value">
 ]>
 
+<!-- En este caso añadimos tambien la posibilidad de probar el mismo documento con el xsd correspondiente -->
+<!-- biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema" 
+        xsi: noNamespaceSchemaLocation= "03_XSD_Actividad2.xsd" -->
+
 <biblioteca>
     <libros>
         <!-- Para los libros este atributo empieza con la letra “L” 
@@ -64,7 +68,7 @@
 
     <revistas>
         <!-- En el caso de las revistas empieza por la letra “R”.-->
-        <revista id="R0001" tipo_clase="Investigacion" paginas="5">
+        <revista id="R0001" tipo_clase_r="Investigacion" paginas="5">
             <!-- informática, corazón, coches, investigación y otras-->
             <titulo_r>Comer es vivir</titulo_r>
             <numero_revista>48</numero_revista>
@@ -85,8 +89,7 @@
         seguido de los 4 dígitos identificativos-->
        <!-- Los periódicos se clasifican en nacionales e internacionales-->
 
-        <periodico id="P-2222" tipo_clase_p="Nacional">           
-            <fecha_publicacion>12/05/2023</fecha_publicacion>
+        <periodico id="P-2222" tipo_clase_p="Nacional" fecha_publicacion="12/05/2023">           
             <secciones_p>
                 <seccion_p tipo_seccion_p="Opinion">
                     <!-- económica, opinión, deportes, nacional o internacional-->
