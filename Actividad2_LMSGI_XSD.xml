@@ -70,7 +70,7 @@
                     <contenido_r>¿El hambre es mental o no? No, tienes hambre porque eres un ser vivo</contenido_r> 
                 </seccion_r>
                 <seccion_r paginas="2">
-                    <contenido_r>La razón por la que comer es vivir es porque te nutres mientras disfrutas/vives. </contenido_r>
+                    <contenido_r >La razón por la que comer es vivir es porque te nutres mientras disfrutas/vives. </contenido_r>
                 </seccion_r>
             </secciones>
         </revista>
@@ -85,8 +85,8 @@
             <secciones_p>
                 <seccion_p tipo_seccion_p="Opinión">
                     <articulos>
-                        <articulo autor="Majin Boo">
-                            <contenido_p>Majin boo es entrevistado y desvela porque es tan malvado</contenido_p>
+                        <articulo autor="Majin Boo" >
+                            <contenido_p >Majin boo es entrevistado y desvela porque es tan malvado</contenido_p>
                         </articulo>
                     </articulos>
                 </seccion_p>
@@ -94,12 +94,12 @@
                 <seccion_p tipo_seccion_p="Internacional">
                     <articulos>
                         <articulo autor="Jiren">
-                            <contenido_p>Jiren cuenta como se convirtió en el guerrero mas fuerte de su universo</contenido_p>
+                            <contenido_p> ("https://www.jirenmola.com") Jiren cuenta como se convirtió en el guerrero mas fuerte de su universo</contenido_p>
                         </articulo>
                     </articulos>
                 </seccion_p>
             </secciones_p>
-            <indice_p>Aqui va un indice</indice_p>
+            <indice_p>Aqui va un indice en el que dice que no se como poner enlaces como atributo en un elemento simple.</indice_p>
         </periodico>
         
     </periodicos>

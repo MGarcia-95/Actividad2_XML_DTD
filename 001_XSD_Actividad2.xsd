@@ -17,9 +17,10 @@
                                                     <xs:element name="capitulo" minOccurs="1" maxOccurs="unbounded">
                                                         <xs:complexType>
                                                             <xs:sequence>
-                                                                <xs:element name="contenido" type="xs:string">
-                                                                    
+                                                                <xs:element name="contenido" type="xs:string" >
+                                                                  
                                                                 </xs:element>
+                                                                
                                                             </xs:sequence>
                                                            
                                                             <xs:attribute name="titulo" use="required">
@@ -32,7 +33,7 @@
                                                             </xs:attribute>
                                                             <xs:attribute name="páginas" use="optional">
                                                                 <xs:simpleType>
-                                                                    <xs:restriction base="xs:integer">
+                                                                    <xs:restriction base="xs:positiveInteger">
                                                                         <xs:minInclusive value="1"/>
                                                                         <xs:maxInclusive value="200"/>
                                                                     </xs:restriction>
@@ -100,7 +101,7 @@
 
                                         <xs:element name="numero_revista" minOccurs="0">
                                             <xs:simpleType>
-                                                <xs:restriction base="xs:integer">
+                                                <xs:restriction base="xs:positiveInteger">
                                                     <xs:minInclusive value="1"/>
                                                     <xs:maxExclusive value="100"/>
                                                 </xs:restriction>
@@ -133,7 +134,7 @@
                                                             </xs:sequence>  
                                                             <xs:attribute name="paginas" use="optional">
                                                                 <xs:simpleType>
-                                                                    <xs:restriction base="xs:integer">
+                                                                    <xs:restriction base="xs:positiveInteger">
                                                                         <xs:minInclusive value="1"/>
                                                                         <xs:maxInclusive value="5"/>
                                                                     </xs:restriction>
@@ -201,6 +202,7 @@
                                                                                 <xs:complexType>
                                                                                     <xs:sequence>
                                                                                         <xs:element name="contenido_p" type="xs:string"/>
+                                                                                    
                                                                                     </xs:sequence>
                                                                                     <xs:attribute name="autor" use ="optional">
                                                                                         <xs:simpleType>

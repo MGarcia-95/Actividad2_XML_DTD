@@ -91,12 +91,12 @@
                 <seccion_p tipo_seccion_p="Internacional">
                     <articulos>
                         <articulo autor="Jiren">
-                            <contenido_p>Jiren cuenta como se convirtió en el guerrero mas fuerte de su universo</contenido_p>
+                            <contenido_p > ("https://www.jirenmola.com") Jiren cuenta como se convirtió en el guerrero mas fuerte de su universo</contenido_p>
                         </articulo>
                     </articulos>
                 </seccion_p>
             </secciones_p>
-            <indice_p>Aqui va un indice</indice_p>
+            <indice_p>Aqui va un indice en el que dice que no se como poner enlaces como atributo en un elemento simple.</indice_p>
         </periodico>
         
     </periodicos>
