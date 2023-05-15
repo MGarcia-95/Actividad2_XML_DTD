@@ -3,16 +3,12 @@
     <!ENTITY AEP "entity-value">
     <!ENTITY OT "entity-value">
 ]>
-<!-- <!DOCTYPE biblioteca SYSTEM "02_DTD_Actividad2.dtd" > -->
 
+    
 <biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-        xsi:noNamespaceSchemaLocation= "01_XSD_Actividad2.xsd"
-        
-        > 
+        xsi:noNamespaceSchemaLocation= "001_XSD_Actividad2.xsd">
 
-   <!-- Para los libros este atributo empieza con la letra “L” 
-        seguido de 4 dígitos identificativos-->
-        <!-- Los libros a su vez son clasificados en novela, infantil o didáctico -->
+         
     <libros>
 
         <libro id="L-1234" tipo_clase="Didáctico" páginas="23">
@@ -30,7 +26,7 @@
                     <contenido>Es una tarea compleja, pero el que la sigue la consigue, lorem ipsum.</contenido>
                 </capitulo>
             </capitulos>
-            <Indice>Aqui va el indice</Indice>
+            <indice>Aqui va el indice</indice>
             <sinopsis>Aqui va la sinopsis</sinopsis>
         </libro>
 
@@ -58,17 +54,14 @@
                 </capitulo>
 
             </capitulos>
-            <Indice>Aqui va el indice</Indice>
+            <indice>Aqui va el indice</indice>
             <sinopsis>Aqui escribimos la sinopsis</sinopsis>
         </libro>
 
     </libros>
 
     <revistas>
-        <!-- En el caso de las revistas empieza por la letra “R”.-->
-        <revista id="R-0001" tipo_clase_r="Investigacion" paginas="5">
-            <!-- informática, corazón, coches, investigación y otras-->
-
+        <revista id="R-0001" tipo_clase_r="Investigación" paginas="5">
             <titulo_r>Comer es vivir</titulo_r>
             <numero_revista>48</numero_revista>
             <indice_r>En este ejemplar explicaremos por qué tienes tanta hambre todos los dias</indice_r>
@@ -83,10 +76,6 @@
         </revista>
 
     </revistas>
-
-    <!-- Para los periódicos este atributo empieza por la letra “P” 
-        seguido de los 4 dígitos identificativos-->
-       <!-- Los periódicos se clasifican en nacionales e internacionales-->
 
 
     <periodicos>
@@ -115,4 +104,4 @@
         
     </periodicos>
 
-</biblioteca> 
+</biblioteca>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca  SYSTEM "002_DTD_Actividad2.dtd" [
+<!ENTITY AEP "Aprende a educar a un pez">
+<!ENTITY OT "El origen de Thanos">
+    
+]>
+         
+<biblioteca>
+    <libros>
+
+        <libro id="L-1234" tipo_clase="Didáctico" páginas="23">
+            <titulo>&AEP;</titulo>
+            <capitulos>
+                <capitulo titulo="Clases de peces" páginas="15">
+                    <contenido>Hay muchos tipos de peces, si quieres saberlos todos compra una enciclopedia</contenido>
+                </capitulo>
+
+                <capitulo titulo="Como darles de comer" páginas="6">
+                    <contenido>Si les das poco se moriran, si les das mucho, explotaran y moriran, dales lo justo.</contenido>
+                </capitulo>
+
+                <capitulo titulo="Enseña a tu pez a hacerse el muerto" páginas="8">
+                    <contenido>Es una tarea compleja, pero el que la sigue la consigue, lorem ipsum.</contenido>
+                </capitulo>
+            </capitulos>
+            <indice>Aqui va el indice</indice>
+            <sinopsis>Aqui va la sinopsis</sinopsis>
+        </libro>
+
+        <libro id="L-5678" tipo_clase="Novela" páginas="90">
+
+            <titulo>&OT;</titulo>
+            <capitulos>
+                <capitulo titulo="Origen de Thanos" páginas="16">
+                    <contenido>Thanos nacio en su casa </contenido>
+                </capitulo>
+
+                <capitulo titulo="Crecimiento de Thanos" páginas="34">
+                    <contenido>Crecio en una familia donde no le querian y tambien queria acabar con la mitad de su familia
+                    que les caia mal</contenido>
+                </capitulo>
+
+                <capitulo titulo="El motivo del odio de Thanos" páginas="45">
+                    <contenido>Aqui empiezan a contarse los problemas mentales dee thanos para querer acabar 
+                    con la mitad del universo</contenido>
+                </capitulo>
+
+                <capitulo titulo="Thanos esta aburrido" páginas="28">
+                    <contenido>Tras aniquilar a la mitad de toda civilizacion, Thanos se va a una casita humilde a vivir placidamente
+                    y comer frutitas sin pensar en lo que se le viene encima</contenido>
+                </capitulo>
+
+            </capitulos>
+            <indice>Aqui va el indice</indice>
+            <sinopsis>Aqui escribimos la sinopsis</sinopsis>
+        </libro>
+
+    </libros>
+
+    <revistas>
+        <revista id="R-0001" tipo_clase_r="Investigación" paginas="5">
+            <titulo_r>Comer es vivir</titulo_r>
+            <numero_revista>48</numero_revista>
+            <indice_r>En este ejemplar explicaremos por qué tienes tanta hambre todos los dias</indice_r>
+            <secciones>
+                <seccion_r paginas="3">
+                    <contenido_r>¿El hambre es mental o no? No, tienes hambre porque eres un ser vivo</contenido_r> 
+                </seccion_r>
+                <seccion_r paginas="2">
+                    <contenido_r>La razón por la que comer es vivir es porque te nutres mientras disfrutas/vives. </contenido_r>
+                </seccion_r>
+            </secciones>
+        </revista>
+
+    </revistas>
+
+
+    <periodicos>
+
+        <periodico id="P-2222" tipo_clase_p="Nacional" fecha_publicacion="2023-12-24">           
+
+            <secciones_p>
+                <seccion_p tipo_seccion_p="Opinión">
+                    <articulos>
+                        <articulo autor="Majin Boo">
+                            <contenido_p>Majin boo es entrevistado y desvela porque es tan malvado</contenido_p>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+
+                <seccion_p tipo_seccion_p="Internacional">
+                    <articulos>
+                        <articulo autor="Jiren">
+                            <contenido_p>Jiren cuenta como se convirtió en el guerrero mas fuerte de su universo</contenido_p>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+            </secciones_p>
+            <indice_p>Aqui va un indice</indice_p>
+        </periodico>
+        
+    </periodicos>
+
+</biblioteca> 

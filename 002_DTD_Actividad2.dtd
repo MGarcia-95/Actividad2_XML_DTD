@@ -11,15 +11,15 @@
 
 <!-- defino los atributos de libro-->
     <!ATTLIST libro id ID #REQUIRED>
-    <!ATTLIST libro tipo_clase (Novela | Infantil | Didactico) #REQUIRED>
-    <!ATTLIST libro paginas CDATA #IMPLIED>
+    <!ATTLIST libro tipo_clase (Novela | Infantil | Didáctico) #REQUIRED>
+    <!ATTLIST libro páginas CDATA #IMPLIED>
 
 <!ELEMENT titulo (#PCDATA)>
 <!ELEMENT capitulos (capitulo+)>
 <!ELEMENT capitulo (contenido)>
 <!-- defino los atributos de capitulo-->
     <!ATTLIST capitulo titulo CDATA #REQUIRED>
-    <!ATTLIST capitulo paginas CDATA #REQUIRED>
+    <!ATTLIST capitulo páginas CDATA #REQUIRED>
 
 <!ELEMENT contenido (#PCDATA)>
 <!ELEMENT indice (#PCDATA)>
@@ -34,7 +34,7 @@
 <!-- Defino los atributos de revista-->
 
     <!ATTLIST revista id ID #REQUIRED>
-    <!ATTLIST revista tipo_clase_r (Informatica | Corazon | Coches | Investigacion | Otras) #REQUIRED>
+    <!ATTLIST revista tipo_clase_r (Informática | Corazón | Coches | Investigación | Otras) #REQUIRED>
     <!ATTLIST revista paginas CDATA #IMPLIED>
 
 <!-- A continuacion se definen los elementos de revista con sus respectivos atibutos dentro de cada elemento --> 
@@ -60,7 +60,7 @@ Atributos: ID, tipo_clase_p, fecha_publicacion, tipo_seccion_p, autor  -->
 <!ELEMENT secciones_p (seccion_p+)> 
 
 <!ELEMENT seccion_p (articulos)>
-    <!ATTLIST seccion_p tipo_seccion_p (Economica | Opinion | Deportes | Nacional | Internacional) #REQUIRED>
+    <!ATTLIST seccion_p tipo_seccion_p (Economica | Opinión | Deportes | Nacional | Internacional) #REQUIRED>
 <!ELEMENT articulos (articulo+)>
 <!ELEMENT articulo (contenido_p)>
     <!ATTLIST articulo autor CDATA #REQUIRED>

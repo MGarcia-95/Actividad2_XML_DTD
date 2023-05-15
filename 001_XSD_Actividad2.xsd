@@ -44,7 +44,7 @@
                                                 
                                             </xs:complexType>
                                         </xs:element>
-                                        <xs:element name="Indice" >
+                                        <xs:element name="indice" >
                                             <xs:simpleType>
                                                 <xs:restriction base="xs:string">
                                                     <xs:minLength value="1"/>
@@ -157,10 +157,10 @@
                                     <xs:attribute name="tipo_clase_r" use="required">
                                         <xs:simpleType>
                                             <xs:restriction base="xs:string">
-                                                <xs:enumeration value="Informatica"></xs:enumeration>
-                                                <xs:enumeration value="Corazon"></xs:enumeration>
+                                                <xs:enumeration value="Informática"></xs:enumeration>
+                                                <xs:enumeration value="Corazón"></xs:enumeration>
                                                 <xs:enumeration value="Coches"></xs:enumeration>
-                                                <xs:enumeration value="Investigacion"></xs:enumeration>
+                                                <xs:enumeration value="Investigación"></xs:enumeration>
                                                 <xs:enumeration value="Otras"></xs:enumeration>
                                             </xs:restriction>
                                         </xs:simpleType>
