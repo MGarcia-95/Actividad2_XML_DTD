@@ -1,4 +1,4 @@
-<!ELEMENT biblioteca (libros, revistas, periodicos)>
+  <!ELEMENT biblioteca (libros, revistas, periodicos)>
 
 <!-- LIBROS -->
 
@@ -10,7 +10,7 @@
 <!ELEMENT libro (titulo, capitulos, indice, sinopsis)>
 
 <!-- defino los atributos de libro-->
-    <!ATTLIST libro id ID CDATA #REQUIRED>
+    <!ATTLIST libro id ID #REQUIRED>
     <!ATTLIST libro tipo_clase (Novela | Infantil | Didactico) #REQUIRED>
     <!ATTLIST libro paginas CDATA #IMPLIED>
 
@@ -29,22 +29,22 @@
 
 <!-- REVISTAS -->
 
-<!ELEMENT revista (titulo_r, numero_revista, indice, secciones+)>
+<!ELEMENT revista (titulo_r, numero_revista, indice_r, secciones+)>
 
 <!-- Defino los atributos de revista-->
 
-    <!ATTLIST revista id ID CDATA #REQUIRED>
+    <!ATTLIST revista id ID #REQUIRED>
     <!ATTLIST revista tipo_clase_r (Informatica | Corazon | Coches | Investigacion | Otras) #REQUIRED>
-    <!ATTLIST revista paginas CDATA #IMPLED>
+    <!ATTLIST revista paginas CDATA #IMPLIED>
 
 <!-- A continuacion se definen los elementos de revista con sus respectivos atibutos dentro de cada elemento --> 
 <!ELEMENT titulo_r (#PCDATA)>
 <!ELEMENT numero_revista (#PCDATA)>
-<!ELEMENT indice (#PCDATA)>
+<!ELEMENT indice_r (#PCDATA)>
 <!ELEMENT secciones (seccion_r+)>
-<!ELEMENT seccion_r (contenido)>
-    <!ATTLIST seccion_r paginas CDATA #IMPLED>
-<!ELEMENT contenido (#PCDATA)> 
+<!ELEMENT seccion_r (contenido_r)>
+    <!ATTLIST seccion_r paginas CDATA #IMPLIED>
+<!ELEMENT contenido_r (#PCDATA)> 
 
 
 <!-- Periodicos: Tienen:
@@ -53,7 +53,7 @@ Atributos: ID, tipo_clase_p, fecha_publicacion, tipo_seccion_p, autor  -->
 
 <!ELEMENT periodico (secciones_p, indice_p)>
 
-    <!ATTLIST periodico id ID CDATA #REQUIRED>
+    <!ATTLIST periodico id ID #REQUIRED>
     <!ATTLIST periodico tipo_clase_p (Nacional | Internacional) #REQUIRED>
     <!ATTLIST periodico fecha_publicacion CDATA #REQUIRED>
 
