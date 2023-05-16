@@ -17,8 +17,14 @@
                                                     <xs:element name="capitulo" minOccurs="1" maxOccurs="unbounded">
                                                         <xs:complexType>
                                                             <xs:sequence>
-                                                                <xs:element name="contenido" type="xs:string" >
-                                                                  
+                                                                <xs:element name="contenido">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute type="xs:string" name="url" use="optional"/>
+                                                                            </xs:extension>  
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
                                                                 </xs:element>
                                                                 
                                                             </xs:sequence>
@@ -110,9 +116,6 @@
                                         <xs:element name="indice_r" >
                                             <xs:simpleType>
                                                 <xs:restriction base="xs:string"> 
-                                                    <!--Introduzco diferentes cardinalidades para variar un poco e introducir 
-                                                    diferentes esquemas a cada elemento de la biblioteca, en este caso, pongo un valor máximo para
-                                                    el tamaño del texto que se puede introducir en el Indice -->
                                                     <xs:minLength value="1"/>
                                                     <xs:maxLength value="1000"></xs:maxLength>
                                                 </xs:restriction>
@@ -125,11 +128,13 @@
                                                         <xs:complexType>
                                                             <xs:sequence>
                                                                 <xs:element name ="contenido_r" >
-                                                                    <xs:simpleType>
-                                                                        <xs:restriction base="xs:string">
-                                                                            <!-- <xs:pattern value=""/> INTRODUCIR URL de contenido--> 
-                                                                        </xs:restriction>
-                                                                    </xs:simpleType>
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute type="xs:string" name="url" use="optional"/>
+                                                                            </xs:extension>  
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
                                                                 </xs:element>
                                                             </xs:sequence>  
                                                             <xs:attribute name="paginas" use="optional">
@@ -201,8 +206,15 @@
                                                                             <xs:element name="articulo">
                                                                                 <xs:complexType>
                                                                                     <xs:sequence>
-                                                                                        <xs:element name="contenido_p" type="xs:string"/>
-                                                                                    
+                                                                                        <xs:element name="contenido_p">
+                                                                                            <xs:complexType>
+                                                                                                <xs:simpleContent>
+                                                                                                    <xs:extension base="xs:string">
+                                                                                                        <xs:attribute type="xs:string" name="url" use="optional"/>
+                                                                                                    </xs:extension>  
+                                                                                                </xs:simpleContent>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
                                                                                     </xs:sequence>
                                                                                     <xs:attribute name="autor" use ="optional">
                                                                                         <xs:simpleType>
