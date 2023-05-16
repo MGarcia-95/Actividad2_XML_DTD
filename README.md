@@ -23,7 +23,6 @@ Validar el documento con alguna aplicación externa e incluir capturas de pantal
 
 IMPORTANTE: Cada alumno propondrá una solución de XML y DTD. Una vez todos los alumnos hayan puesto todas sus soluciones, se cotejará con el resto para poner la solución final.
 
-Valoración: 5 puntos sobre 10
 
 Requerimiento 2
 
@@ -33,4 +32,6 @@ Validar el documento con alguna aplicación externa e incluir capturas de pantal
 
 IMPORTANTE: Cada alumno propondrá una solución de XML y XSD. Una vez todos los alumnos hayan puesto todas sus soluciones, se cotejará con el resto para poner la solución final.
 
-Valoración: 5 puntos sobre 10
+
+Gracias por visualizar el contenido de este repositorio de GitHub :) 
+
